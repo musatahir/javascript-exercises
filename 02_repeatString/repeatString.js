@@ -1,4 +1,12 @@
-const repeatString = function() {
+const repeatString = function (word, freq) {
+    if (freq < 0) {
+        return "ERROR"
+    }
+    let res = ""
+    for (let i = 0; i < freq; i++) {
+        res += word
+    }
+    return res
 
 };
 
